@@ -13,6 +13,8 @@ classDiagram
     -matches_played: Integer
     -wins: Integer
     -losses: Integer
+    -players: List<Player>
+    -consumables: List<Consumable>
   }
 
   class Player {
@@ -30,9 +32,9 @@ classDiagram
     -image_url: String
   }
 
-  User --> Club : 1
-  Club "1"*--"N" Player
-  Club "1"*--"N" Consumable
+  User --> Club
+  Club "1" *-- "N" Player
+  Club "1" *-- "N" Consumable
 
 
 ```
