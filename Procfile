@@ -1,0 +1,1 @@
+web: java -jar build/libs/my-football-club-0.0.1-SNAPSHOT.jar
